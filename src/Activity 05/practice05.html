@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+    <meta name="description" content="Practice assingment for week 5" />
+    <title>Week 5 practice assignment</title>
+
+    <style>
+        header {
+            border-bottom: 1px solid grey;
+            padding-bottom: 5px;
+        }
+
+        footer {
+            border-top: 1px solid grey;
+            padding-top: 5px;
+        }
+        main {
+            margin: 1% 10% 1% 10%;
+        }
+
+        img {
+            width: 30%;
+            border-radius: 5%;
+            border: 1px solid black;
+            margin-right: 5px;
+            margin-top: 10px;
+            float: left;
+        }
+
+        p {
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .circle {
+            float: left;
+            width: 150px;
+            height: 150px;
+            border-radius: 75px;
+            margin: 1rem;
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .center1 .circle {
+            line-height: 150px;
+        }
+
+        nav > ul {
+            list-style: none;
+            padding: 4px 12px 4px 12px;
+            float: left;
+            margin: 0;
+            color: orangered;
+        }
+
+        nav li {
+            display: inline;
+        }
+
+        .list_two {
+            float: right;
+        }
+        .pull-left {
+            float: left;
+            padding: 0;
+            margin: 0;
+        }
+        .pull-right {
+            float: right;
+            padding: 0;
+            margin: 0;
+        }
+        .heading-color {
+            color: orangered;
+        }
+        .wrapper-col {
+            display:table;
+        }
+        .wrapper-col .col {
+            display: table-cell;
+        }
+        .col {
+            color: white;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header> 
+        <nav class="clearfix">
+            <h3 class="pull-left">Floated menus:</h3>
+            <ul class="list_one">
+                <li>One</li>
+                <li>Two</li>
+            </ul>
+            <ul class="list_two">
+                <li>Three</li>
+                <li>Four</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h1><span class="heading-color">&lt;Article 1&gt;:</span> Wrapping text around an image</h1>
+            
+            <section>
+                <div class="image_float clearfix">
+                    <img src="https://plus.unsplash.com/premium_photo-1664392246085-8faa9f9e1f8a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMGNpdHl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60" alt="New York City Image" />
+                    <h2>A secondary heading</h2>
+                    <p>
+                        Integer ipsum est, malesuada cursus sapien at, pharetra sollicitudin leo. Pellentesque ultrices risus
+                        et finibus sagittis. Suspendisse varius, nulla at tincidunt sagittis, ipsum tellus rutrum magna, a
+                        efficitur ex nibh sed nunc. Ut sed condimentum orci. Fusce at enim congue, consequat turpis eu, interdum
+                        diam. Donec nec viverra quam. Aenean convallis facilisis quam non malesuada. Nullam a tincidunt nisi, eu
+                        aliquet felis. Suspendisse potenti. Mauris lacinia dapibus diam. Fusce ut lacinia orci. Sed suscipit maximus
+                        pretium. Aliquam vel erat in ante feugiat molestie ac ac quam. Maecenas finibus felis vel vulputate viverra.
+                        Fusce vehicula, arcu ut scelerisque iaculis, tellus erat dignissim odio, quis ultrices turpis nisi at ante.
+                        Vivamus a leo augue.
+                    </p>
+                </div>
+            </section>
+
+        </article>
+        <article>
+            <h1><span class="heading-color">&lt;Article 2&gt;:</span> Centering text vertically</h1>
+            
+                <div class="clearfix center1">
+                    <div class="circle">Selectors</div>
+                    <div class="circle">Inheritance</div>
+                    <div class="circle">Cascade</div>
+                    <div class="circle">Specificity</div>
+                </div>
+        </article>
+        
+        <article>
+            <h1><span class="heading-color">&lt;Article 3&gt;:</span> Equal-height columns</h1>
+            <div class="wrapper-col clearfix">
+                <div class="col" style="background-color: grey;">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur urna odio, hendrerit non pharetra ut,
+                        ornare sed lacus. Curabitur nisi purus, ultrices id dolor et, fringilla consectetur erat. Etiam varius
+                        velit vel orci semper, at pellentesque nulla lobortis. Sed vel sem mollis, lacinia quam eget, iaculis risus.
+                        Donec dictum felis eu interdum rutrum.
+                    </p>
+                </div>
+                <div class="col" style="background-color: black;">
+                    <p>
+                        Donec semper lacus id libero laoreet egestas. Vivamus et elementum metus. Aliquam porta nulla at fringilla
+                        lobortis. Integer fermentum volutpat purus, imperdiet tristique massa vehicula id. Vivamus rutrum pellentesque
+                        pretium. Mauris laoreet metus eget risus blandit consequat. Vestibulum ante ipsum primis in faucibus orci
+                        luctus et ultrices posuere cubilia curae; Etiam eleifend diam non nulla pretium feugiat. Mauris rutrum tempus
+                        ornare. Nulla eleifend dignissim magna, sit amet laoreet ligula elementum non. Aenean egestas pulvinar ligula
+                        in lacinia. Ut lacinia ipsum fermentum, ornare est non, mollis justo. Etiam dapibus blandit dignissim. Aliquam
+                        tempus turpis magna, sed sodales lorem condimentum at.
+                    </p>
+                </div>
+                <div class="col" style="background-color: grey;">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur urna odio, hendrerit non pharetra ut,
+                        ornare sed lacus. Curabitur nisi purus, ultrices id dolor et, fringilla consectetur erat. Etiam varius
+                        velit vel orci semper, at pellentesque nulla lobortis. Sed vel sem mollis, lacinia quam eget, iaculis risus.
+                        Donec dictum felis eu interdum rutrum.
+                    </p>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div class="wrapper clearfix">
+            <h3 class="pull-left">Julio Andrade</h3>
+            <div class="pull-right">&copy; All rights reserved</div>
+        </div>
+    </footer>
+</body>
+</html>
