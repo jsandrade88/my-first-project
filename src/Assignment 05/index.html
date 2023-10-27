@@ -8,8 +8,23 @@
         <meta name="robots" content="index,follow">
         
         <style>
+
+            @media all and (max-width: 500px){
+                .top-list {
+                    display: none;
+                }
+                .container-1 {display: none;}
+                ul
+                button {display: none;}
+                .search {display: none;} 
+                .third {display: none;}
+                .bottom-list {display: none;}   
+        
+        }
             body {
                 font-family: Arial, Helvetica, sans-serif;
+                margin: 8px 0 8px 0;
+
             }
 
             .container-1 {
@@ -21,11 +36,40 @@
                 margin-top: 10px;
                 justify-content: center;
             }
-            .main {
+            .container-3 {
                 display: flex;
-                flex-flow: column;
+                background-color: grey;
+                color: white;
+            }
+            .main {
+                margin: 1% 17% 1% 17%;
+                display: flex;
             }
 
+            .main > .first {
+                display: flex;
+                flex-flow: column nowrap;
+                padding-top: 25px;
+                margin-right: 5px;
+            }
+            .image2 {
+                margin-top: 40px;
+            }
+            .main > .second {
+                display: flex;
+                flex-flow: column nowrap;
+                margin: 0 5px 0 5px;
+            }
+            .main > .third {
+                display: flex;
+                flex-flow: column;
+                background-color: rgb(233, 233, 233);
+                border-radius: 10px;
+                padding: 10px 10px 200px 10px;
+                margin: 25px 0 25px 5px;
+                align-items: stretch;
+                width: 80%;
+            }
             .name {
                 font-size: 24px;
                 font-weight: bold;
@@ -54,6 +98,37 @@
                 padding-right: 15px;
                 color: coral;
             }
+            .container-3 ul li {
+                color: white;
+                padding-right: 5px;
+            }
+            img {
+                width: 200px;
+                height: 200px;
+                border-radius: 10px;
+            }
+            .image3 { 
+                width: 100%;
+                border-radius: 0;
+            }
+            #rights {
+                margin-left: auto;
+                padding: 15px 50px 15px 50px;
+            }
+            button {
+                background-color: coral;
+                padding: 10px 25px;
+                border-radius: 5px;
+                color: white;
+                border: none;
+                margin-bottom: 10px;
+            }
+            .text2 {
+                padding-top: 20px;
+            }
+            h2, h3 {
+                color: gray;
+            }
 
         </style>
     </head>
@@ -61,11 +136,11 @@
     <body>
         <div class="container-1">
             <div class="name">Julio Andrade</div>
-            <input type="text" placeholder="Type to search"></input>
+            <input class="search" type="text" placeholder="Type to search">
         </div>
         
         <div class="container-2">
-            <ul>
+            <ul class="top-list">
                 <li>Home</li>
                 <li>Recent posts</li>
                 <li>Old posts</li>
@@ -73,16 +148,61 @@
                 <li>About us</li>
             </ul>
         </div>
-
+        
         <div class="main">
-            <div class="left">
-                <div>
-                    <img src="images/nature1.jpg" alt="picture of mountain field">
-                </div>
+            <div class="first">
+                <div class="left"><img class="image1" src="../images/nature1.jpg" alt="picture of mountain field"></div>
+                <div class="lower-left"><img class="image2" src="../images/waterfall.jpg" alt="waterfall"></div>
+            </div>
+        <div class="second">
+            <div class="upper">
+                <div class="text1">
+                    <h2>First post with image</h2>
+                    <h3>By Adam Smith, Jan 1 2021</h3>
+                    <p>
 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac sapien convallis,
+                        lacinia ligula ac, cursus magna. Sed vel bibendum velit. Ut id augue congue, tincidunt
+                        sem at, iaculis eros. 
+                    </p>
+                    <button>Read More</button>
+                </div>
+            </div>
+            <div class="lower">
+                <div class="text2">
+                    <h2>Second post with image</h2>
+                    <h3>By John Doe, Jan 1 2021</h3>
+                    <p>
+
+                        Cras sit amet purus ac diam elementum ultricies ut ornare enim. Sed volutpat sem porttitor,
+                        feugiat mauris ultricies, condimentum nulla. Mauris eu dui dictum, vehicula ante in,
+                        tincidunt lacus.
+                    </p>
+                    <button>Read More</button>
+                </div>
             </div>
         </div>
+        <div class="third">
+           <div class="right">
+            <h2>Secondary content here</h2>
+            <div><img class="image3" src="../images/waterfall.jpg" alt="waterfall"></div>
+           <p>
+            Mauris iaculis finibus ipsum nec aliquet. Maecenas semper sem ultrices, laoreet lorem commodo, pharetra ex.
+             Vestibulum et eros enim. Proin lobortis molestie blandit. Quisque turpis turpis, varius vel suscipit eu,
+              interdum vitae arcu. Maecenas vehicula tincidunt nisi id suscipit.
+           </p>
+        </div>
+    </div>
+</div>
 
+<div class="container-3">
+    <ul class="bottom-list">
+        <li>Facebook</li>
+        <li>Twitter</li>
+        <li>YouTube</li>
+    </ul>
+    <span id="rights">&copy; All rights reserved</span>
+</div>
 
 
     </body>
