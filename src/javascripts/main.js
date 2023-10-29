@@ -1,5 +1,5 @@
 //TODO - Your ES6 JavaScript code (if any) goes here
-//import "bootstrap"
+import "bootstrap"
 
 // getMax function with 3 numbers
 function getMax(x,y,z){
