@@ -1,5 +1,5 @@
 //TODO - Your ES6 JavaScript code (if any) goes here
-import "bootstrap"
+//import "bootstrap"
 
 // getMax function with 3 numbers
 function getMax(x,y,z){
@@ -72,5 +72,18 @@ console.log(getCharPerLine('Hello World!'));
 
 // arrow function 
 function arrow(size) {
-    
+    for (let i = 1; i < size; i ++) {
+        for (let c = 0; c < size; c ++){
+        console.log("*");
+    }
+    console.log("\n");
 }
+for (let i = 1; i <= size -1; i++) {
+    for (let c = 0; c < size -1; c++) {
+        console.log("*");
+    }
+    console.log("\n");
+}
+}
+
+console.log(arrow(3));
